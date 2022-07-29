@@ -8,9 +8,7 @@ const NavBar = () =>{
 
 <div className= 'navbar bg-light'>
 <div className="container">
-    <a className="navbar-brand" href="#">
     <img className='logoTamanio' src="/assets/PowerFitness.png" alt="logo adidas" />
-    </a>
 </div>
 
             <nav className="textoTamanio navbar navbar-expand-lg bg-light">
@@ -21,16 +19,16 @@ const NavBar = () =>{
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                    <a className="espacioBarras nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Features</a>
+                    <a className="espacioBarras nav-link" href="#">Features</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Pricing</a>
+                    <a className="espacioBarras nav-link" href="#">Pricing</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link disabled">Disabled</a>
+                    <a className="espacioBarras nav-link disabled">Disabled</a>
                 </li>
             </ul>
         </div>
