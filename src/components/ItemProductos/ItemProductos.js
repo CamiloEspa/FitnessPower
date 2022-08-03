@@ -1,18 +1,24 @@
 import './ItemProductos.scss'
 
-const ItemProductos = (props) =>{
-    console.log ("propiedades: ",props.title, props.price )
+const ItemProductos = ({titulo, price,imagen}) =>{
     return(
-        <div className='estilosCards'>
-            <div className='float-options'> 
-            <img src="./assets/FotosProteinas/prote1.jpg" alt="Proteina"/>
-            <br/> 
-            <p>{props.titulo}</p>
-            <spam>COP {props.price}</spam>
+        <div className='container '>
+        <div className='row tamanioCard '>
+        <div className='card '>
+        <img className='card-img-top' src={"./assets/FotodProteinas/ ${imagen}"} alt="imagen"/>
+        <div className='card-body'>
+            <h4 className='card-title'> {titulo}</h4>
             <br/>
-            <button>Comprar </button>
+            <spam>COP {price}</spam> <br/>
+            <br/>
+            <p className='card-text text-secondary'>fafdssdkjfnaksjdfkjandfkjndsafnakjnfdkjsanskjnfdsakjnfkjndsajnasdkjnafskjndfsakjadfnskjafdsnkjfdsa</p>
         </div>
         </div>
+        </div>
+    </div>
+
+
+                
     )
 }
 
