@@ -1,15 +1,5 @@
-.estilosCards {
-    width: 20rem;
-    box-shadow: 1px 1px 5px #afafaf47;
-    border: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin-right: 10px;
-    margin-bottom: 10px;
+.botonContador{
+    margin-top: 2rem;
 }
 
 .tamanioCard{
@@ -24,4 +14,18 @@ width: 18rem;
     padding: 10px;
     
 
+}
+
+.contadorProductos{
+    display: flex;
+    justify-content: center;
+}
+
+.contadorProductos p{
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.contadorProductos button{
+    padding: 10px;
 }
