@@ -1,15 +1,20 @@
 import './ItemProductos.scss'
 import { useState } from 'react'
 
-const ItemProductos = ({titulo, price,image}) =>{
 
-    const [contador, setContador] = useState(1)
+
+
+const ItemProductos = ({titulo, price,image, stock}) =>{
+
+    const [contador, setCount] = useState( 0 )
     const addNumber = () =>{
-        setContador(contador +1)
+        setCount(contador +1)
+
+            
     }
 
     const removeNumber = () =>{
-        setContador(contador -1)
+        setCount(contador -1)
     }
 
     return(
@@ -23,13 +28,14 @@ const ItemProductos = ({titulo, price,image}) =>{
             <br/>
             <spam>COP {price}</spam> <br/>
             <br/>
+            <p>Stock {stock}</p>
 
             <p className='card-text text-secondary'>fafdssdkjfnaksjdfkjandfkjndsafnakjnfdkjsanskjnfdsakjnfkjndsajnasdkjnafskjndfsakjadfnskjafdsnkjfdsa</p> <br/>
 
             <div className='contadorProductos'>
-                <button onClick={removeNumber} className='btn btn-danger'>-</button>
+                <button disabled={contador<=1} onClick={removeNumber} className='btn btn-danger'>-</button>
                     <p>{contador}</p>
-                <button onClick={addNumber} className='btn btn-danger'>+</button>    
+                <button disabled={contador>=stock} onClick={addNumber} className='btn btn-danger'>+</button>    
             </div>
 
             <button  type="button" className="btn btn-danger botonContador">Comprar</button>
