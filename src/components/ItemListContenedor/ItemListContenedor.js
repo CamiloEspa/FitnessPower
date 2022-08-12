@@ -44,10 +44,7 @@ const ItemContenedor = ({section}) => {
     return(
         <div className='list-products'>
             <h2>{section}</h2>
-            {listProducts.map ((product)=>{
-                return <ItemProductos data={product}/>
-
-            })}
+            {listProducts.map (product=> <ItemProductos data={product}/> )}
             
 
         </div>
