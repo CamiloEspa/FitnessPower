@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import ItemProductos from './components/ItemProductos/ItemProductos';
 import ItemContenedor from './components/ItemContenedor/ItenContenedor';
+import ItemListContainer from './components/ItemListContenedor/ItemListContenedor';
 
 function App() {
   
@@ -12,9 +13,9 @@ function App() {
 
 <h2>Proteinas</h2>
 <div className='main-container'>
-        <ItemContenedor section="Productos en oferta"/>
-      </div>
-    {/* <Footer/> */}
+        <ItemListContainer section="Productos en oferta"/>
+      </div >
+    <Footer/> 
     </div>
   );
 }
