@@ -4,6 +4,9 @@ import Footer from './components/Footer/Footer';
 import ItemProductos from './components/ItemProductos/ItemProductos';
 import ItemContenedor from './components/ItemContenedor/ItenContenedor';
 import ItemListContainer from './components/ItemListContenedor/ItemListContenedor';
+import ItemDetail from './components/ItemDetail/ItemDetail';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+
 
 function App() {
   
