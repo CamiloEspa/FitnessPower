@@ -1,4 +1,6 @@
 import './NavBar.css'
+import {Link} from 'react-router-dom'
+
 
 const NavBar = () =>{
 
@@ -19,13 +21,13 @@ const NavBar = () =>{
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a className="espacioBarras nav-link active" aria-current="page" href="#">Home</a>
+                    <Link to="Home"><a className="espacioBarras nav-link active" aria-current="page">Home</a></Link>
                 </li>
                 <li className="nav-item">
-                    <a className="espacioBarras nav-link" href="#">Features</a>
+                    <Link to="/productos"><a className="espacioBarras nav-link">Productos</a></Link>
                 </li>
                 <li className="nav-item">
-                    <a className="espacioBarras nav-link" href="#">Pricing</a>
+                    <Link to="/contacto"><a className="espacioBarras nav-link">Contacto</a></Link>
                 </li>
                 <li className="nav-item">
                     <a className="espacioBarras nav-link disabled">Disabled</a>

@@ -1,13 +1,14 @@
 
 import './ItemProductos.scss'
 import {   useState, useEffect } from 'react'
+import {Link} from 'react-router-dom'
 
 
 
 
 const ItemProductos = ({data}) =>{
 
-    const {titulo, price, image, stock} = data
+    const {titulo, price, image, stock, id} = data
 
     const [contador, setCount] = useState( 0 )
     const addNumber = () =>{
@@ -28,7 +29,10 @@ const ItemProductos = ({data}) =>{
     }
 
 
-    return(
+    return (
+
+        <Link to={`/productos/${id}`}>
+
         <div className='container '>
         <div className='row tamanioCard '>
         <div className='card'>
@@ -51,6 +55,7 @@ const ItemProductos = ({data}) =>{
         </div>
         </div>
     </div>
+    </Link>
 
 
                 

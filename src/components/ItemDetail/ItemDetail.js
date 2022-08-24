@@ -1,17 +1,23 @@
-import "../ItemDetail/ItemDetail.scss"
+import './ItemDetail.scss'
+
 import { useState } from "react"
 
+
 const ItemDetail = ({data}) => {
-
     return (
-        <div>
+        <div className="container">
+            <div className="detail">
+                <img src={`/assets/${data.image}`} alt="imagen" />
+                <div className="context">
+                    <h2>title prueba</h2>
+                    <h1> {data.titulo} </h1>
+                    <p>{data.price}</p>
+                </div>
 
-            
-            <h3>{data.titulo}</h3>
-            <p className="">$ {data.price}</p>
-            
-            <h2>Descripcion Proteina</h2>
-            <p>Descripcion de la proteian</p>
+            </div>
+
+        
+
         </div>
     )
 
