@@ -33,7 +33,7 @@ const ItemProductos = ({data}) =>{
 
         <Link to={`/productos/${id}`}>
 
-        <div className='container '>
+        <div className='container cardDecoration'>
         <div className='row tamanioCard '>
         <div className='card'>
         <img className='card-img-top' src={`/assets/${image}`} alt="Imagen producto" />

@@ -18,9 +18,9 @@ function App() {
     
     <div className="App">
       <NavBar/>
-      <ItemDetailContainer/>
+{/*       <ItemDetailContainer/> */}
       <Routes>
-        {/* <Route path="/" element={<ItemListContainer/>}/> */}
+        <Route path="/" element={<ItemListContainer/>}/>
         <Route path="/Home" element={<Home/>} />
         <Route path="/contacto" element={<Contact/>} />
         <Route path="/productos" element={<Products/>}/>

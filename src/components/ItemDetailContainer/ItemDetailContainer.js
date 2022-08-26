@@ -4,6 +4,7 @@ import products from "../../utils/products";
 import {useParams} from 'react-router-dom'
 
 
+
 const ItemDetailContainer = () =>{
     const [productData, setProductData] = useState({})
 
@@ -14,7 +15,7 @@ const ItemDetailContainer = () =>{
     },[id])
     
     const filetById = () =>{
-        products.some ((product)  =>{
+        products.some ((products)  =>{
             if (products.id == id){
                 console.log ("producto filtrado ", products)
                 setProductData(products)

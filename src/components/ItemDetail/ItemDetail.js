@@ -6,12 +6,16 @@ import { useState } from "react"
 const ItemDetail = ({data}) => {
     return (
         <div className="container">
-            <div className="detail">
-                <img src={`/assets/${data.image}`} alt="imagen" />
+                <h1 className='tituloPosition'> {data.titulo} </h1>
+                
+                <div className="detail">
+                <img className='itemDetailBoxImg' src={`/assets/${data.image}`} alt="imagen" />
                 <div className="context">
-                    <h2>title prueba</h2>
-                    <h1> {data.titulo} </h1>
-                    <p>{data.price}</p>
+                <p className='descripcionBox' >{data.descripcion}</p>
+                <h4 className='pricePosition'>Precio</h4>
+                <p>{data.price} COP</p>
+
+                <button  type="button" className="btn btn-danger botonContador">Comprar</button>
                 </div>
 
             </div>
