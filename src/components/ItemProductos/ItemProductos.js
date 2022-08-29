@@ -50,7 +50,7 @@ const ItemProductos = ({data}) =>{
                     <p>{contador}</p>
                 <button disabled={contador>=stock} onClick={addNumber} className='btn btn-danger'>+</button>    
                 </div>
-                <button  type="button" className="btn btn-danger botonContador">Comprar</button>
+                <button  type="button" className="btn btn-danger botonContador">Añadir al carrito</button>
         </div>
         </div>
         </div>

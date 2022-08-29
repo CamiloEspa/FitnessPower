@@ -1,9 +1,14 @@
 import './ItemDetail.scss'
+import ItemCount from '../ItemCount/ItemCount'
+import { Link } from 'react-router-dom'
 
 import { useState } from "react"
 
 
 const ItemDetail = ({data}) => {
+
+const [quantitySelected, setQuantitySelected] = useState (0)
+
     return (
         <div className="container">
                 <h1 className='tituloPosition'> {data.titulo} </h1>
@@ -15,7 +20,14 @@ const ItemDetail = ({data}) => {
                 <h4 className='pricePosition'>Precio</h4>
                 <p>{data.price} COP</p>
 
-                <button  type="button" className="btn btn-danger botonContador">Comprar</button>
+                {console.log("setQuantitySelected", quantitySelected)}{
+                    quantitySelected > 0 ? 
+                    
+                    <Link to='/cart'><button className='btn btn-danger'> Terminar Compra </button></Link>
+                    
+                    : <ItemCount setQuantitySelected={setQuantitySelected} />
+                }
+
                 </div>
 
             </div>

@@ -1,0 +1,17 @@
+.botonContador{
+    margin-top: 2rem;
+}
+
+.contadorProductos{
+    display: flex;
+    justify-content: center;
+}
+
+.contadorProductos span{
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.contadorProductos button{
+    padding: 10px;
+}

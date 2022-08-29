@@ -8,6 +8,7 @@ import Contact from './components/pages/Contact';
 import Products from './components/pages/Products';
 import Detail from './components/pages/Detail';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Checkout from './components/pages/Checkout';
 
 function App() {
   
@@ -24,7 +25,9 @@ function App() {
         <Route path="/Home" element={<Home/>} />
         <Route path="/contacto" element={<Contact/>} />
         <Route path="/productos" element={<Products/>}/>
+        <Route path="/cart" element={<Checkout/>}/>
         <Route path="/productos/:id" element={<Detail/>}/>
+
 {/*         <Route path="*" element={<h1>ERROR 404 - Pagina no disponible</h1>} />
  */}      </Routes>
           <Footer/> 
