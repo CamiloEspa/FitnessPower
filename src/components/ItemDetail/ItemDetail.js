@@ -25,7 +25,7 @@ const [quantitySelected, setQuantitySelected] = useState (0)
                     
                     <Link to='/cart'><button className='btn btn-danger'> Terminar Compra </button></Link>
                     
-                    : <ItemCount setQuantitySelected={setQuantitySelected} />
+                    : <ItemCount setQuantitySelected={setQuantitySelected} productData={data} />
                 }
 
                 </div>

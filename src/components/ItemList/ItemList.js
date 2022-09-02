@@ -1,6 +1,9 @@
 import ItemProductos from "../ItemProductos/ItemProductos"
+import { useContext } from "react"
+import { CartContext } from "../context/CartContext"
 
 const ItemList = ({dataProducts}) => {
+    
     return (
         <>
         {dataProducts.map (product=> { 

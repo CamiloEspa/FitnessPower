@@ -9,14 +9,15 @@ import Products from './components/pages/Products';
 import Detail from './components/pages/Detail';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Checkout from './components/pages/Checkout';
+import CartProvider from './components/context/CartContext';
 
 function App() {
   
 
   return (
 
+    <CartProvider>
     <BrowserRouter>
-    
     <div className="App">
       <NavBar/>
 {/*       <ItemDetailContainer/> */}
@@ -33,6 +34,7 @@ function App() {
           <Footer/> 
     </div>
     </BrowserRouter>
+    </CartProvider>
   );
   
 }

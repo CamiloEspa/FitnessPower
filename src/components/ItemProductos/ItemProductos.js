@@ -17,7 +17,6 @@ const ItemProductos = ({data}) =>{
 
 
     useEffect (()=>{
-        console.log ("Se esta ejecutando el useEffects")
         /*   fetch ().then (
                 setProduct()
             ) */
@@ -28,6 +27,11 @@ const ItemProductos = ({data}) =>{
         setCount(contador -1)
     }
 
+    const addToCart = (e) =>{
+
+        e.stopPropagation()
+
+    }
 
     return (
 
@@ -50,7 +54,7 @@ const ItemProductos = ({data}) =>{
                     <p>{contador}</p>
                 <button disabled={contador>=stock} onClick={addNumber} className='btn btn-danger'>+</button>    
                 </div>
-                <button  type="button" className="btn btn-danger botonContador">Añadir al carrito</button>
+                <button onClick={addToCart} type="button" className="btn btn-danger botonContador">Añadir al carrito</button>
         </div>
         </div>
         </div>
